@@ -1,0 +1,211 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+:root {
+	--red:#DB545A;
+    --blue:#478AC9;
+    --pink:#F1B5B8;
+    --green:#2CCCC4;
+    --yellow:#F1C50E;
+    --light-green:#ADF6F2;
+    --light-yellow:#F9E796;
+    --light-blue:#ADCCE9;
+    --border-yellow:#ffee32;
+    --opaque-black:#292d33;
+    --dark-gray:#8a817c;
+    --light-gray:#bcb8b1;
+}
+
+.topPage{
+	position:absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    margin: auto;
+}
+.head-title{
+	width:100%;
+    top:155px;
+    position:absolute;
+    margin:auto;
+    text-align:center;
+    font-size:48px;
+    letter-spacing:1px;
+    font-family: 'Comfortaa', cursive;
+    
+    font-weight:700;
+    color:#F3F1E9;
+    z-index:50;
+}
+.main-container{
+	width:100%;
+    max-height:100%;
+    margin:auto;
+    margin-bottom:30px;
+    top:300px;
+    position:relative;
+}
+.menu-container{
+	width:fit-content;
+	display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    
+}
+.text-container{
+    display:flex;
+    width: fit-content;
+    margin:auto;
+    margin-left:0;
+    border: none;
+    background:transparent;
+    padding:25px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    justify-content:flex-start;
+    transition:0.4s;
+    color:#F3F1E9;
+}
+.text-container:hover{
+	background-color:var(--light-yellow);
+    transition:0.4s;
+    cursor:pointer;
+    color:var(--opaque-black);
+}
+.active{
+	background-color:#F3F1E9;
+    color:var(--opaque-black);
+}
+.text-container h2{
+    text-align:center;
+    font-size:26px;
+    letter-spacing:1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+.grid-container {
+    display: grid;
+    min-height:500px;
+    height:100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding: 60px;
+    padding-left:100px;
+    padding-right:100px;
+    justify-content:center;
+    background-color:#F3F1E9;
+}
+.grid-item {
+    height: 250px;
+    margin:15px;
+    margin-top:25px;
+    margin-bottom:25px;
+    background-image:url("/images/story-blank.jpg");
+    transition:0.4s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-item:hover {
+	position:relative;
+    transform:translate(0,-20px);
+    z-index:20;
+    box-shadow: 8px 8px var(--opaque-black);
+    transition:0.4s;
+    cursor:pointer;
+}
+.grid-item-overlay{
+	width:100%;
+    height:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+	background-color:#00000095;
+    transition:0.5s;
+}
+.grid-item-overlay:hover{
+	width:100%;
+    height:100%;
+	background-color:#00000095;
+    transition:0.5s;
+}
+
+.grid-item-title{
+	font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size:22px;
+    color:#F3F1E9;
+    letter-spacing:-0.5px;
+    line-height:150%;
+    padding:5px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color:var(--opaque-black);
+}
+
+.message-cont{
+	width:fit-content; 
+    margin:auto;
+    text-align:center;
+    display:flex;
+    white-space:nowrap;
+    align-items:center;
+    position:relative;
+    margin-top:0;
+    border-radius:5px;
+    padding:10px;
+    padding-left:25px;
+    padding-right:25px; 
+    background-color: var(--cian);
+    border: 3px solid var(--opaque-black);
+    flex-wrap:wrap;
+}
+.story-message{
+	width:fit-content;
+	font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size:22px;
+}
+.href{
+	padding-left:8px;
+    padding-right:8px;
+	text-decoration:none;
+    color:var(--red);
+}
+@media (max-width:800px){
+	.message-cont{
+    	padding:5px;
+    	padding-left:15px;
+    	padding-right:15px;
+    }
+    .href{
+    	margin-top:-30px;
+    	padding-left:0px;
+    }
+    .story-message:last-child{
+    	margin-top:-5px;
+    }
+}
+@media (max-width:500px){
+	.head-title{
+    	font-size:32px;
+    }
+    .text-container h2{
+    	font-size:22px;
+    }
+    .message-cont{
+    	white-space:normal;
+        text-align:left;
+        padding:2px;
+        padding-left:8px;
+    	padding-right:8px;
+    }
+    .href{
+    	margin-top:-20px;
+    	padding-left:0px;
+    }
+    .story-message:last-child{
+    	margin-top:-5px;
+    }
+    .story-message{
+    	font-size:16px;
+    }
+}

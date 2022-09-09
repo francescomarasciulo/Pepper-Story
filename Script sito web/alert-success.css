@@ -1,0 +1,51 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+:root {
+	--red:#DB545A;
+    --yellow:#F1C50E;
+    --light-yellow:#F9E796;
+    --opaque-black:#292d33;
+    --dark-gray:#8a817c;
+    --light-gray:#bcb8b1;
+    --cian:#c0d6df;
+}
+
+.swal-modal {
+    width:35%;
+    height:230px;
+    padding:5px;
+    padding-bottom:15px;
+}
+.swal-title { 
+	padding: 20px;
+    text-align: center;
+    letter-spacing:1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: xx-large;
+}
+
+@media all and (max-width: 800px) {
+	.swal-modal {
+    	width:50%;
+	}
+}
+@media all and (max-width: 450px) {
+  .swal-modal {
+  	  width:60%;
+      height:250px;
+  }
+  .swal-title { 
+      padding: 20px;
+      font-size: x-large;
+  }
+}
+
+
+
+
+
+
+
+
+
+

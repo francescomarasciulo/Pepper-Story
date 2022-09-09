@@ -1,0 +1,104 @@
+:root {
+	--red:#DB545A;
+    --yellow:#F1C50E;
+    --light-yellow:#F9E796;
+    --opaque-black:#292d33;
+    --dark-gray:#8a817c;
+    --light-gray:#bcb8b1;
+    --cian:#c0d6df;
+}
+
+::-webkit-scrollbar {
+	display:block;
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background-color:#2f3e46;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F3F1E9;
+    border: none;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--light-gray);
+}
+
+.bg {
+	background-color:#293241;
+  	bottom:0;
+  	left:-50%;
+  	position:fixed;
+  	right:-50%;
+  	top:0;
+  	z-index:-1;
+}
+
+.parallax{
+	/* The image used */
+  	background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-talk.jpg");
+  	/*Set a specific height */
+  	min-height:3500px;
+  	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.parallax-homepage{
+	/* The image used */
+  	background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-homepage.jpg");
+  	/*Set a specific height */
+  	min-height:2000px;
+  	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.parallax-short{
+	/* The image used */
+  	background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-talk.jpg");
+  	/*Set a specific height */
+  	min-height:650px;
+  	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.parallax-profile{
+	/* The image used */
+  	background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-talk-profile.jpg");
+  	/*Set a specific height */
+  	min-height:600px;
+  	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@media (max-width: 800px){
+	.parallax-short{
+    	background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-talk-short.jpg");
+        min-height:800px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    .parallax{
+        /* The image used */
+        background:linear-gradient(0deg,#00000080,#00000080), url("/images/pepper-talk-short.jpg");
+        /*Set a specific height */
+        min-height:3500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+}

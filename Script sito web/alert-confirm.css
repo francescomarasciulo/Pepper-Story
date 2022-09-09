@@ -1,0 +1,96 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+:root {
+	--red:#DB545A;
+    --yellow:#F1C50E;
+    --light-yellow:#F9E796;
+    --opaque-black:#292d33;
+    --dark-gray:#8a817c;
+    --light-gray:#bcb8b1;
+    --cian:#c0d6df;
+}
+
+.swal-modal {
+    width:40%;
+    padding:5px;
+    padding-bottom:10px;
+}
+.swal-icon{
+	animation:pulse;
+    animation-duration:2s;
+}
+.swal-title { 
+	padding: 20px;
+    text-align: center;
+    letter-spacing:1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: xx-large;
+}
+.swal-text { 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: large;
+    letter-spacing:1px;
+}
+.swal-button {
+	margin-top:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: transparent;
+    font-size: 18px;
+    letter-spacing:1px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    border:none;
+}
+
+.swal-button.confirm-button{
+	border: 3px solid var(--red);
+    background-color:var(--red);
+    color:whitesmoke;
+    margin-right:10px;
+    transition:0.5s;
+}
+.swal-button.confirm-button:hover{
+	border: 3px solid var(--cian);
+    background-color:var(--cian);
+    transition:0.5s;
+}
+
+@media all and (max-width: 800px) {
+	.swal-modal {
+      width:55%;
+	}
+}
+@media all and (max-width: 500px) {
+	.swal-modal {
+      width:70%;
+	}
+    .swal-icon{
+    	font-size:30px;
+	}
+    .swal-title { 
+    	padding: 20px;
+      	font-size: x-large;
+ 	}
+    .swal-text { 
+        padding: 10px;
+        font-size: medium;
+    }
+    .swal-button {
+      margin-top:15px;
+      padding-top:5px;
+      padding-bottom:5px;
+      padding-left:15px;
+      padding-right:15px;
+      font-size: 14px;
+	}
+    
+}
+
