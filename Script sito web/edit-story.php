@@ -6,7 +6,6 @@ require_once('connection.php');
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$title = $_POST["story_title"] ?? '';
 	$titleTemp = $title . " (Modifica)";
-    echo "Puttana la madonna dio cane dio morto crocefisso bastardo :".$title;
 	$myCreateStatement = "CREATE TABLE `$titleTemp` (
 								 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 								 Testo VARCHAR(1000) NOT NULL,
@@ -267,4 +266,4 @@ $conn = null;
       </div><!--Chiudo main-page-->        
         <!--mainCard-->
     </body>
-</html>
+</html>
